@@ -1,10 +1,13 @@
-const dotenv = require('dotenv').config();
+const dotenv = require('dotenv');
 const { Client, Collection, GatewayIntentBits } = require('discord.js');
 const { readdirSync } = require('fs');
 
+dotenv.config();
 const token = process.env.TOKEN;
 const client = new Client({ intents: GatewayIntentBits.Guilds });
+
 client.commands = new Collection();
+client.selectMenus = new Collection();
 client.commandArray = [];
 
 const functionFolders = readdirSync('./src/functions');
@@ -17,4 +20,5 @@ for (const folder of functionFolders) {
 
 client.handleEvents();
 client.handleCommands();
+client.handleComponents();
 client.login(token);
