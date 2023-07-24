@@ -3,7 +3,7 @@ A bot for [Tarot Iluma](https://deronfts.com/collections/tarot-iluma) NFT Projec
 
 ## Features ✨
 
-- Randomly draw from a card from the collection.
+- Randomly draw a card from the collection.
 - Search for card using the stats.
 - Read about a specific card.
 
@@ -12,7 +12,7 @@ A bot for [Tarot Iluma](https://deronfts.com/collections/tarot-iluma) NFT Projec
 To host the bot:
 
 1. Clone the repository to your local machine.
-2. Install the required dependencies by running the following command:
+2. Install the required dependencies using the following command:
 ```
 npm i
 ```
@@ -27,7 +27,7 @@ To obtain `'Discord Bot ID'` & `'Server ID'`, make sure have enabled [Developer 
 
 5. Run the bot using the following command:
 ```
-npm run start
+npm run dev
 ```
 
 ## Screenshot 🖼️
